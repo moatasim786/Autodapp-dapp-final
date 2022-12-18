@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+section {
+    padding: 100px 0 100px;
+}
+
+@media(max-width:768px) {
+
+    section {
+        padding: 50px 0 50px;
+    }
+}
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2000px);
+}
+.template, .dashboard-btn {
+    order: -1;
+}
+
+.dashboard-btn {
+    font-weight: 600;
+    margin-left: 160px;
+    font-size: 16px;
+}
+
+.panel__top {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+
+    z-index: 1000;
+    margin-left: 110px;
+}
+
+.panel__basic-actions {
+    position: initial;
+    background-color: #e0e0e0 !important;
+    left: 100px;
+    z-index: 1000 !important;
+}
+
+.panel__basic-actions span {
+    height: 30px;
+}
+
+.logoBuilder {
+    background-image: url("./develop/svg/logo-svg.svg");
+    color: black;
+    width: 200px;
+    min-height: 30px;
+    background-size: 200px 32px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-right: 50%;
+}
+
+.cm-s-hopscotch span.cm-error {
+    background-color: transparent;
+}
+
+[data-active="true"] {
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 3px;
+}

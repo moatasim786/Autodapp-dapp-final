@@ -1,0 +1,68 @@
+.burn-fee{
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #fff;
+    
+    &__number-field{
+        display: flex;
+        justify-content: space-between;
+        width: 240px;
+        height: 100%;
+        align-items: center;
+        padding: 0 15px;
+
+        input{
+          border-radius: 15px 0 0 15px !important;
+        }
+    }
+
+    input{
+        border: none !important;
+        padding-left: 0 !important;
+        font-weight: 400 !important;
+        color: #000 !important;
+    }
+
+    &__arrows{
+        .img-1{
+            img{
+                cursor: pointer;
+                margin-top: 10px;
+            }
+        }
+        .img-2{
+            img{
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__percents{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        width: 60px;
+        height: 100%;
+        padding-left: 23px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: #fff;
+    }
+}
+
+@media (max-width: 576px){
+    .burn-fee{
+        max-width: 100%;
+
+        &__number-field{
+            width: 100%;
+        }
+    }
+}

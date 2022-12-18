@@ -1,0 +1,35 @@
+.tax-recieve-address {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #DFDFDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 22px;
+  color: #C4C4C4;
+}
+
+.tax-recieve-address input {
+  width: 100% !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+@media (min-width: 592px) {
+  .tax-recieve-address {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 1394px) {
+  .tax-recieve-address {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=TaxRecieveAddress.css.map */

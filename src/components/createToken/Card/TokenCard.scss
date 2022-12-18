@@ -1,0 +1,95 @@
+.token-card{
+    padding: 11px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    height: 83px;
+
+    &--active{
+        background: #6DB8FF !important;
+        .card-title{
+            color: #fff !important;
+        }
+    }
+
+    .card-body{
+        padding: 0;
+    }
+
+    .card-circle{
+        width: 61px;
+        height: 61px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+
+        img{
+            height: 40px;
+            width: 61px;
+            margin-top: 10px;
+            object-fit: contain;
+        }
+    }
+
+    .card-title{
+        color: #000000;
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        margin-top: 5px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: 1287px) {
+    .token-card{
+        .card-title{
+            line-height: 17px;
+        }
+    }
+}
+
+@media (max-width: 525px){
+    .token-card{
+        .card-circle{
+            width: 41px;
+            height: 41px;
+            img{
+                height: 20px;
+                width: 41px;
+                margin-top: 10px;
+            }
+        }
+        .card-title{
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media (max-width: 1395px){
+    .token-card{
+        .card-title{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 460px){
+    .token-card{
+        .card-circle{
+            width: 41px;
+            height: 41px;
+            margin-right: 5px;
+            img{
+                height: 21px;
+                width: 41px;
+                margin-top: 10px;
+            }
+        }
+        .card-title{
+            font-size: 17px;
+            line-height: 17px;
+        }
+    }
+}

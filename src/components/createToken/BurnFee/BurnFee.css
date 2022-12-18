@@ -1,0 +1,73 @@
+.burn-fee {
+  max-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #DFDFDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burn-fee__number-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 240px;
+  padding: 0px 15px 0px 22px;
+  border-right: 1px solid #DFDFDF;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burn-fee input {
+  border: none !important;
+  padding-left: 0 !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+}
+
+.burn-fee__arrows .img-1 img {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.burn-fee__arrows .img-2 img {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.burn-fee__percents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 100%;
+  padding-left: 23px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #F9F9F9;
+}
+
+@media (max-width: 576px) {
+  .burn-fee {
+    max-width: 100%;
+  }
+  .burn-fee__number-field {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=BurnFee.css.map */

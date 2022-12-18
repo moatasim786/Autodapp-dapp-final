@@ -1,0 +1,52 @@
+.card__btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #2486e3;
+  border-radius: 51px;
+  padding: 21px 60px;
+  max-width: 410px;
+  margin: 50px auto;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+
+  &-none {
+    cursor: not-allowed;
+  }
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.004em;
+  color: #fefafa;
+
+  animation: animationsButton linear 1s;
+
+  @media (max-width: 1440px) {
+    padding: 18px 55px;
+    font-size: 24px;
+  }
+  @media (max-width: 992px) {
+    padding: 16px 50px;
+    font-size: 20px;
+  }
+  @media (max-width: 576px) {
+    bottom: 0;
+    position: fixed;
+    max-width: 250px;
+    padding: 14px 40px;
+    font-size: 18px;
+  }
+}
+@keyframes animationsButton {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

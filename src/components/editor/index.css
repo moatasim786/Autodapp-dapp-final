@@ -1,0 +1,98 @@
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2000px);
+}
+.template, .dashboard-btn {
+    order: -1;
+}
+
+.input_container {
+    background-color: #f6f7f9;
+    /* text-align: center; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contract_save {
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, .15);
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 25%);
+    transition: 0.4s;
+}
+
+.contact_input {
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 350px;
+}
+
+.dashboard-btn {
+    font-weight: 600;
+    margin-left: 160px;
+    font-size: 16px;
+}
+
+.panel__top {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+
+    z-index: 1000;
+    margin-left: 110px;
+}
+
+.panel__basic-actions {
+    position: initial;
+    background-color: #e0e0e0 !important;
+    left: 100px;
+    z-index: 1000 !important;
+}
+
+.panel__basic-actions span {
+    height: 30px;
+}
+
+.logoBuilder {
+    background-image: url("./develop/svg/logo-svg.svg");
+    color: black;
+    width: 200px;
+    min-height: 30px;
+    background-size: 200px 32px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-right: 55%;
+}
+
+.cm-s-hopscotch span.cm-error {
+    background-color: transparent;
+}
+
+[data-active="true"] {
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 3px;
+}
+.gjs-sm-sector-caret{
+  width: 20px;
+  height: 20px;
+}
+
+.gjs-block__media {
+    color: transparent;
+    margin-top: auto;
+}
+
+.gjs-block__media svg {
+    max-height:30px;
+}
+

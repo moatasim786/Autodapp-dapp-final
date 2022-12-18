@@ -1,0 +1,71 @@
+.inc-dinc-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.inc-dinc-field .field {
+  width: 350px;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #DFDFDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inc-dinc-field .field input {
+  border: none;
+  text-align: center;
+}
+
+.inc-dinc-field .field-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #4E5558;
+}
+
+.inc-dinc-field .field-minus {
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background: #F9F9F9;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-left: 23px;
+  border-right: 1px solid #DFDFDF;
+  cursor: pointer;
+}
+
+.inc-dinc-field .field-plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 100%;
+  padding-left: 23px;
+  border-top-right-radius: 15px;
+  border-left: 1px solid #DFDFDF;
+  border-bottom-right-radius: 15px;
+  background: #F9F9F9;
+}
+/*# sourceMappingURL=IncDincField.css.map */

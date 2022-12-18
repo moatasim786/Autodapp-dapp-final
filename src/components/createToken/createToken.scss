@@ -1,0 +1,205 @@
+.main {
+  position: relative;
+  &__content {
+    padding-bottom: 20px;
+
+    &-title-box {
+      padding-bottom: 20px;
+    }
+  }
+  .token-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000000;
+  }
+  .create-token {
+    padding: 12px 20px;
+    border: 1px solid #dfdfdf;
+    min-height: 181px;
+    display: flex;
+    flex-direction: column;
+
+    .card-title {
+      font-size: 17px;
+      font-weight: 400;
+    }
+    .card-title-big {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      display: flex;
+      align-items: center;
+      color: #000;
+    }
+  }
+  .create-token__fields {
+    .settings {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      div {
+        display: flex;
+        align-items: center;
+        margin: 14px 10px 14px 0;
+      }
+    }
+    .btn {
+      max-width: 330px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 10px;
+    }
+    .info-block {
+      padding: 25px 25px 27px 35px;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      color: #000;
+      font-weight: 500;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+    }
+    .info {
+      margin-bottom: 10px;
+      background: transparent;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      border: 1px solid #dfdfdf;
+      border-radius: 34px;
+      margin-right: 10px;
+
+      &-check {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        margin-right: 10px;
+
+        input {
+          &:checked + .circle:before {
+            background-color: #6db8ff;
+          }
+        }
+
+        .circle {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #fff;
+          transition: 0.4s;
+          border-radius: 50%;
+
+          &:before {
+            position: absolute;
+            content: '';
+            height: 12px;
+            width: 12px;
+            left: 9px;
+            bottom: 9px;
+            background-color: #fff;
+            transition: 0.4s;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      input {
+        display: none;
+
+        &:checked + .slider:before {
+          transform: translateX(26px);
+          background: #6db8ff;
+        }
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        transition: 0.4s;
+        border-radius: 20px !important;
+
+        &::before {
+          position: absolute;
+          content: '';
+          height: 22px;
+          width: 22px;
+          left: 4px;
+          bottom: 3px;
+          background-color: #dfdfdf;
+          transition: 0.4s;
+          border-radius: 50%;
+        }
+      }
+    }
+    input {
+      width: 100%;
+      padding: 15px 15px 15px 20px;
+      border-radius: 15px;
+      border: 2px solid #fff;
+      background: transparent;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 102%;
+      letter-spacing: -0.5px;
+      color: #121213;
+
+      &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 102%;
+        letter-spacing: -0.5px;
+        color: rgba(21, 20, 20, 0.5);
+      }
+    }
+  }
+  .field {
+    input {
+      border-radius: 0 !important;
+      border: 2px solid #fff;
+    }
+  }
+}
+.token-card {
+  padding: 11px 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  height: 83px;
+}
+.token__btn {
+  position: relative;
+  margin: 0;
+  transition: .3s;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+.token__btn-top{
+  padding: 10px 20px;
+  font-size: 14px;
+}

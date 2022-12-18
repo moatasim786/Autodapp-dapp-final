@@ -1,0 +1,145 @@
+.cardItem {
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &__active{
+    transform: scale(1.05);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  @media (max-width: 576px) {
+    margin-top: 20px;
+  }
+
+  img {
+    margin-bottom: 18px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+
+    @media (max-width: 1440px) {
+      max-width: 360px;
+      height: 240px;
+    }
+    @media (max-width: 1200px) {
+      max-width: 300px;
+      height: 200px;
+    }
+    @media (max-width: 992px) {
+      max-width: 300px;
+      height: 200px;
+    }
+  }
+  h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 160%;
+    letter-spacing: 0.004em;
+    color: #000000;
+    
+    @media (max-width: 1440px) {
+      font-size: 24px;
+    }
+    @media (max-width: 992px) {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.004em;
+    color: #000000;
+
+    @media (max-width: 1440px) {
+      font-size: 14px;
+    }
+    @media (max-width: 992px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.cardLaunch {
+  background-color: #00a8ff59;
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  margin: 0 auto;
+  border: 1px solid #61c9f0bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+   @media (max-width: 1440px) {
+     max-width: 360px;
+     height: 240px;
+   }
+
+   @media (max-width: 1200px) {
+     max-width: 300px;
+     height: 200px;
+   }
+
+  //  @media (max-width: 992px) {
+  //    max-width: 300px;
+  //    height: 200px;
+  //  }
+
+  //  @media (max-width: 768px) {
+  //    max-width: 300px;
+  //    height: 200px;
+  //  }
+
+}
+
+.card__btn_launch {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #2486e3;
+  border-radius: 44px;
+  padding: 7px 24px;
+  max-width: 55%;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &-none {
+    cursor: not-allowed;
+  }
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.004em;
+  color: #fefafa;
+
+  @media (max-width: 992px) {
+    // padding: 16px 20px;
+    font-size: 18px;
+    max-width: 120px;
+  }
+}
